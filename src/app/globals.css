@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080a06;
+  --foreground: #f3f5ed;
+  --card-bg: #11140e;
+  --card-border: rgba(204, 255, 0, 0.12);
+  --neon-lime: #ccff00;
+  --neon-lime-hover: #b8e600;
+  --neon-lime-dim: rgba(204, 255, 0, 0.08);
+  --olive-muted: #8e9a82;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(204, 255, 0, 0.3);
+  color: #ccff00;
+}
+
+/* Minimal modern glow effects */
+.glow-lime-sm {
+  box-shadow: 0 0 20px -5px rgba(204, 255, 0, 0.35);
+}
+
+.glow-lime-lg {
+  box-shadow: 0 0 60px -10px rgba(204, 255, 0, 0.25);
+}
+
+.lime-radial-glow {
+  background: radial-gradient(circle at center, rgba(160, 215, 0, 0.22) 0%, rgba(100, 140, 0, 0.08) 50%, transparent 75%);
+}
+
+.card-tilted-shadow {
+  position: relative;
+}
+
+.card-tilted-shadow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  border: 1.5px solid #ccff00;
+  transform: rotate(-3deg);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Subtle background grid pattern */
+.bg-grid-minimal {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(204, 255, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(204, 255, 0, 0.025) 1px, transparent 1px);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a06;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #202717;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #364424;
+}
+
+/* Prominent modal scrollbar */
+.modal-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ccff00 rgba(204, 255, 0, 0.08);
+}
+
+.modal-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-scrollbar::-webkit-scrollbar-track {
+  background: rgba(204, 255, 0, 0.04);
+  border-radius: 9999px;
+}
+
+.modal-scrollbar::-webkit-scrollbar-thumb {
+  background: #ccff00;
+  border-radius: 9999px;
+}
+
+.modal-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #e6ff66;
+}

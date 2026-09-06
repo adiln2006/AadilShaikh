@@ -102,17 +102,17 @@ export const PERSONAL_INFO = {
     "Designing with 8pt grids, debugging with console.log, winning hackathons for breakfast.",
     "Components so clean you could eat off them; hooks so snappy they don't re-render unless provoked.",
   ],
-  about: `UI/UX Designer and frontend-focused product developer with hands-on experience designing user interfaces, mapping intuitive user journeys, and building responsive, accessible front-end experiences. Skilled in Figma-based product design (wireframing, rapid prototyping, scalable design systems) and in translating those designs into functional, high-performance interfaces using React, Next.js, and Angular. Passionate about AI-powered product experiences — from personal finance coaches to project-management workspaces and e-learning platforms — with a relentless focus on visual hierarchy, usability, and consistent interaction patterns.`,
+  about: `UI/UX Designer and frontend-focused developer with hands-on experience designing user interfaces, mapping user flows, and building responsive, accessible front-end experiences. Skilled in Figma-based product design (wireframing, prototyping, design systems) and in translating those designs into functional interfaces using React and Angular. Experienced in shaping AI-powered product experiences — from personal finance apps to project-management and e-learning platforms — with a strong focus on usability, visual hierarchy, and consistent interaction patterns. Passionate about solving real user problems through clear, purposeful design and contributing to product-focused teams.`,
   education: [
     {
       institution: "Saraswati College of Engineering",
-      degree: "Computer Engineering (B.E.)",
+      degree: "Computer Engineering",
       period: "2023 – 2027",
       score: "7.8 CGPA",
       details: "Specializing in software architecture, human-computer interaction, and modern web systems.",
     },
     {
-      institution: "Yashwantrao Chavan College of Science",
+      institution: "Yaswantrao Chavan College of Science",
       degree: "Higher Secondary Education in Computer Science",
       period: "2021 – 2023",
       score: "Distinction",
@@ -584,20 +584,21 @@ export const CASE_STUDIES: CaseStudy[] = [
 export const DEV_PROJECTS: DevProject[] = [
   {
     id: "careerflip",
-    title: "CareerFlip",
+    title: "AI Mentor Platform",
     tagline: "Personalized career roadmaps with adaptive AI guidance & interactive node trees.",
     description:
-      "Full-stack career transition platform helping learners bridge skills gaps through AI-generated adaptive curriculums, interactive React Flow roadmaps, and real-time mentor chat.",
+      "Full-stack career mentorship platform helping students and professionals transition into new career domains through personalized roadmaps, adaptive learning schedules, AI-curated resources, and domain-specific communities.",
     techStack: [
+      "React",
       "Next.js",
-      "React Flow",
       "Node.js",
       "Express.js",
-      "Gemini API",
-      "Socket.io",
       "MySQL",
       "MongoDB",
       "Redis",
+      "Gemini API",
+      "Socket.io",
+      "React Flow",
     ],
     architecture: [
       "Interactive node-based skill tree using React Flow with dynamic dependency calculations.",
@@ -607,8 +608,8 @@ export const DEV_PROJECTS: DevProject[] = [
     ],
     keyHighlights: [
       "Adaptive learning schedules that adjust dynamically when users complete or skip milestones.",
-      "Integrated gamification with XP points, streak multipliers, and badge unlocks.",
-      "Automated job & internship matching based on demonstrated roadmap mastery.",
+      "Real-time mentoring features including chat, gamification, and progress tracking.",
+      "AI-based job and internship recommendations to improve engagement.",
     ],
     category: "Fullstack AI",
     liveUrl: "https://career-flip.vercel.app/",
@@ -621,7 +622,7 @@ export const DEV_PROJECTS: DevProject[] = [
     title: "Swagger Space",
     tagline: "Centralized API workspace for designing, testing, and sharing REST endpoints.",
     description:
-      "Modern Postman/Swagger alternative built for engineering teams to document schemas, run live HTTP requests with mock data, manage environments, and collaborate in real-time.",
+      "API workspace enabling teams to design, document, test, and share REST APIs from a centralized platform with version control and workspace management.",
     techStack: [
       "React",
       "TypeScript",
@@ -640,9 +641,9 @@ export const DEV_PROJECTS: DevProject[] = [
       "Automated OpenAPI 3.0 export and client SDK generation.",
     ],
     keyHighlights: [
-      "Instant environment variable switcher (Local, Staging, Production) with secure masking.",
+      "Interactive API testing, environment management, and authentication support.",
       "Detailed request history, response headers inspector, and syntax-highlighted JSON viewer.",
-      "Team collection sharing with revision history and rollback capabilities.",
+      "Centralized team collaboration with revision history and workspace management.",
     ],
     category: "Developer Tools",
     liveUrl: "https://swagger-space-9o5g-two.vercel.app/",
@@ -652,10 +653,10 @@ export const DEV_PROJECTS: DevProject[] = [
   },
   {
     id: "finx",
-    title: "FinX",
-    tagline: "Stock market analytics dashboard with AI-driven trend predictions & volatility scoring.",
+    title: "Financial Data Platform",
+    tagline: "Stock market dashboard with real-time analytics, interactive charts & modern fintech UI.",
     description:
-      "Full-stack fintech analytics dashboard streaming real-time ticker quotes, interactive candlestick charts, technical moving averages, and Python-backed statistical indicators.",
+      "Full-stack financial dashboard streaming real-time and historical stock data, interactive candlestick charts, technical moving averages, and Python-backed statistical indicators.",
     techStack: [
       "React",
       "Vite",
@@ -664,7 +665,6 @@ export const DEV_PROJECTS: DevProject[] = [
       "Pandas",
       "Recharts",
       "yfinance",
-      "Tailwind CSS",
     ],
     architecture: [
       "High-throughput FastAPI asynchronous backend fetching live market telemetry via yfinance.",
